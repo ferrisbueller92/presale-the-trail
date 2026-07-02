@@ -1,0 +1,45 @@
+/* The Trail — design tokens.
+   Grounded in observed identity (real Google Business photos — IG grid was login-walled):
+   concrete footpath + white subway-tile counter + black steel pendants (cool neutral base) ·
+   oxblood/burgundy canvas awning over full-glass bifold shopfront (signature) ·
+   cerulean-blue coffee crockery (accent) · timber/crema warm-brown (secondary accent) ·
+   handwritten chalkboard specials board. Unpretentious neighbourhood brunch spot, not polished. */
+:root {
+  /* colour */
+  --concrete:     #EDEBE4;   /* footpath/paper — light sections */
+  --concrete-deep: #E1DED4;  /* card surface, slightly deeper */
+  --ink:          #1B1815;   /* charcoal — steel pendants + chalkboard, warm-black */
+  --ink-soft:     #5A554E;
+  --awning:       #6B2A28;   /* their real oxblood canvas awning — primary/signature */
+  --awning-deep:  #4E1E1C;   /* dark sections, footer */
+  --crockery-blue: #2F6E93;  /* their real cerulean coffee crockery — accent/CTA */
+  --crockery-blue-deep: #245A79;
+  --crockery-blue-soft: #6FA7C4;
+  --timber:       #6D4C3F;   /* coffee crema / counter timber — warm secondary */
+  --timber-soft:  #A98974;
+  --chalk:        #F6F3EC;   /* chalk-white, off the concrete base */
+
+  /* type */
+  --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --sans: "Public Sans", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --marker: "Permanent Marker", cursive; /* sparing — badges/labels only, never body/headline */
+
+  /* scale */
+  --step--1: clamp(0.82rem, 0.8rem + 0.1vw, 0.9rem);
+  --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --step-1:  clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+  --step-2:  clamp(1.6rem, 1.4rem + 1vw, 2.2rem);
+  --step-3:  clamp(2rem, 1.7rem + 1.6vw, 3rem);
+  --step-4:  clamp(2.8rem, 2.1rem + 3.6vw, 5.2rem);
+
+  /* space + shape */
+  --space-s: clamp(1rem, 2vw, 1.5rem);
+  --space-m: clamp(2rem, 4vw, 3rem);
+  --space-l: clamp(3.5rem, 7vw, 6rem);
+  --radius: 2px;             /* raw/concrete = near-square, no soft corners */
+  --shadow: 0 18px 50px -24px rgba(27, 24, 21, 0.35);
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 240ms;
+}
